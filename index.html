@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EdgeLab Sports Picks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-icon">E</span>
+      <span>EdgeLab</span>
+    </div>
+
+    <button class="login-btn">Sign In</button>
+  </header>
+
+  <main class="hero">
+    <div class="badge">● LIVE SPORTS RESEARCH</div>
+
+    <h1>
+      Research Every Play.
+      <span>Find Your Edge.</span>
+    </h1>
+
+    <p>
+      Search players, study trends, compare matchups,
+      and view sports picks in one place.
+    </p>
+
+    <button class="main-btn" onclick="scrollToPicks()">
+      View Picks
+    </button>
+  </main>
+
+  <section class="search-section">
+    <div class="search-box">
+      <input
+        id="playerSearch"
+        type="text"
+        placeholder="Search a player..."
+      >
+
+      <button onclick="searchPlayer()">
+        Search
+      </button>
+    </div>
+  </section>
+
+  <section class="sports-nav">
+    <button class="sport active">MLB</button>
+    <button class="sport">NBA</button>
+    <button class="sport">NFL</button>
+    <button class="sport">NHL</button>
+  </section>
+
+  <section id="picks" class="picks-section">
+
+    <div class="section-heading">
+      <div>
+        <p class="small-label">LIVE BOARD</p>
+        <h2>Top Picks</h2>
+      </div>
+
+      <div class="live-status">● LIVE</div>
+    </div>
+
+    <div class="pick-grid">
+
+      <article class="pick-card" data-name="Aaron Judge">
+
+        <div class="card-top">
+          <div>
+            <p class="league">MLB</p>
+            <h3>Aaron Judge</h3>
+            <p class="team">New York</p>
+          </div>
+
+          <div class="score">
+            94
+            <span>EDGE SCORE</span>
+          </div>
+        </div>
+
+        <div class="prop">
+          <span class="over">▲ OVER</span>
+          <strong>1.5 Total Bases</strong>
+        </div>
+
+        <div class="stats">
+          <div>
+            <span>Last 5</span>
+            <strong>80%</strong>
+          </div>
+
+          <div>
+            <span>Last 10</span>
+            <strong>70%</strong>
+          </div>
+
+          <div>
+            <span>Matchup</span>
+            <strong>A+</strong>
+          </div>
+        </div>
+
+        <button class="details-btn">
+          View Research
+        </button>
+
+      </article>
+
+      <article class="pick-card" data-name="Shohei Ohtani">
+
+        <div class="card-top">
+          <div>
+            <p class="league">MLB</p>
+            <h3>Shohei Ohtani</h3>
+            <p class="team">Los Angeles</p>
+          </div>
+
+          <div class="score">
+            91
+            <span>EDGE SCORE</span>
+          </div>
+        </div>
+
+        <div class="prop">
+          <span class="over">▲ OVER</span>
+          <strong>0.5 Home Runs</strong>
+        </div>
+
+        <div class="stats">
+          <div>
+            <span>Last 5</span>
+            <strong>60%</strong>
+          </div>
+
+          <div>
+            <span>Last 10</span>
+            <strong>70%</strong>
+          </div>
+
+          <div>
+            <span>Matchup</span>
+            <strong>A</strong>
+          </div>
+        </div>
+
+        <button class="details-btn">
+          View Research
+        </button>
+
+      </article>
+
+      <article class="pick-card" data-name="Juan Soto">
+
+        <div class="card-top">
+          <div>
+            <p class="league">MLB</p>
+            <h3>Juan Soto</h3>
+            <p class="team">New York</p>
+          </div>
+
+          <div class="score">
+            88
+            <span>EDGE SCORE</span>
+          </div>
+        </div>
+
+        <div class="prop">
+          <span class="under">▼ UNDER</span>
+          <strong>1.5 Hits</strong>
+        </div>
+
+        <div class="stats">
+          <div>
+            <span>Last 5</span>
+            <strong>60%</strong>
+          </div>
+
+          <div>
+            <span>Last 10</span>
+            <strong>60%</strong>
+          </div>
+
+          <div>
+            <span>Matchup</span>
+            <strong>B+</strong>
+          </div>
+        </div>
+
+        <button class="details-btn">
+          View Research
+        </button>
+
+      </article>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
